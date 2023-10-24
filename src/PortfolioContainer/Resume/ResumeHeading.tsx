@@ -31,7 +31,7 @@ export const ResumeHeading = (props: ResumeProps) => {
       <div className="resume-heading-description">
         <span>{props.description ? props.description : ""}</span>
       </div>
-      <div className="resume-heading-used">
+      <div className="resume-heading-description">
         <span>{props.used ? props.used : ""}</span>
       </div>
     </div>
