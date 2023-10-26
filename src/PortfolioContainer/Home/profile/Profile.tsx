@@ -38,7 +38,7 @@ export default function Profile() {
                 {" "}
               </h1>
               <span className="profile-role-tagline">
-                Aspiring programmer in Java, Python and ReactJS
+                Aspiring programmer in Java, Python Typescript and ReactJS
               </span>
             </span>
           </div>
@@ -47,9 +47,10 @@ export default function Profile() {
               className="btn highlighted-btn"
             >
               {" "}
-              Hire Me{" "}
+              Hire Me
+              {" "}
             </button>
-            <a href="resume.jpg" download="This is a resume.jpg">
+            <a href="2023.11_Leon_IT_CS.docx" download="LeonResume.docx">
               <button className="btn highlighted-btn"> Get Resume </button>
             </a>
           </div>

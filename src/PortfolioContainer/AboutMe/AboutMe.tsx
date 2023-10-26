@@ -72,7 +72,7 @@ export default function AboutMe(props: ScreenProps) {
                 {" "}
                 Hire Me{" "}
               </button>
-              <a href="resume.jpg" download="This is a resume.jpg">
+              <a href="2023.11_Leon_IT_CS.docx" download="LeonResume.docx">
                 <button className="btn highlighted-btn"> Get Resume </button>
               </a>
             </div>
