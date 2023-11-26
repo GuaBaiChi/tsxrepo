@@ -46,3 +46,30 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## To do
+
+Issues and Bugs
+2023.11.26
+0. Hi if you're reading this, welcome to my README section
+
+1. Hire Me and Get Resume buttons do not appear in full screen
+
+2. Education Subheading details not showing up.
+
+3. Hamburger submenu sucks
+
+4. About Me, Hire Me and Get Resume do not have highlighted buttons
+
+5. Programming Skills. Should have two columns
+
+6. Projects... Programming Skills overflows onto Projects
+
+7. Interests... Projects overflows onto Interests
+
+8. Interests is empty
+
+9. Profile picture should be me.
+
+10. About Me highlight list should be completed
