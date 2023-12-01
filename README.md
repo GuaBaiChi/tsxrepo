@@ -54,8 +54,6 @@ Issues and Bugs
 2023.11.26
 0. Hi if you're reading this, welcome to my README section
 
-1. Hire Me and Get Resume buttons do not appear in full screen
-
 2. Education Subheading details not showing up.
 
 3. Hamburger submenu sucks
@@ -73,3 +71,9 @@ Issues and Bugs
 9. Profile picture should be me.
 
 10. About Me highlight list should be completed
+
+2023.12.01
+11. Learn how to make custom buttons and colors with react-bootstrap 
+https://www.geeksforgeeks.org/how-to-change-colors-for-a-button-in-react-bootstrap/
+
+

@@ -31,8 +31,7 @@
 
 .highlighted-text {
   color: #FF5823;
-  color: var( --dark-orange);
-  /* don't use the above from the instructor */
+  /* color: var( --dark-orange); */
 }
 
 .profile-role-tagline {
@@ -41,14 +40,6 @@
   font-family: "Poppins Light";
 }
 
-.profile-options .highlighted-btn {
-  margin: 0 0 0 28px;
-}
-.profile-options .highlighted-btn:hover {
-  margin: 0 0 0 28px;
-  background-color: cornsilk;
-  color: #111;
-}
 .profile-picture {
   display: flex;
   align-items: center;
@@ -69,17 +60,19 @@
   background-position: center;
 }
 .profile-picture-background:hover {
-    transform: scale(1.07);
-    transition: 1s ease-out;
+  transform: scale(1.07);
+  transition: 1s ease-out;
 }
 .colz .colz-icon i {
-    color: #668cff;
-    padding: 8px;
-    padding-left: 0px;
+  color: #668cff;
+  padding: 8px;
+  padding-left: 0px;
 }
 .colz .colz-icon i:hover{
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
+
+
 
 /*IPAD PRO RESPONSIVENESS*/
 @media only screen and (max-width: 1110px) {
@@ -92,12 +85,7 @@
   .profile-details-role .primary-text {
     font: 12px;
   }
-  .profile-options .btn {
-    background: #FF5823;
-    width: 120px;
-    padding: 11px 0;
-    z-index: 700;
-  }
+  
 }
 @media only screen and (max-width: 910px) {
   .profile-picture {
@@ -114,15 +102,8 @@
     flex-direction: column-reverse;
     margin: 40px 0 0 0;
   }
-  .profile-options {
-    display: flex;
-    justify-content: space-between;
-  }
   .proflie-details {
     margin: 25px 0 0;
-  }
-  .profile-options .highlighted-btn {
-    margin: 0 !important;
   }
   .profile-details-name,
   .profile-details-role {

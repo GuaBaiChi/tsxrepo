@@ -1,5 +1,6 @@
 import React from "react";
 import "./Profile.css";
+import Button from 'react-bootstrap/Button';
 
 export default function Profile() {
   return (
@@ -38,20 +39,23 @@ export default function Profile() {
                 {" "}
               </h1>
               <span className="profile-role-tagline">
-                Aspiring programmer in Java, Python Typescript and ReactJS
+                Aspiring programmer in: Java, Python, Typescript, and ReactJS
               </span>
             </span>
           </div>
-          <div className="profile-options">
-            <button
-              className="btn highlighted-btn"
+          <div>
+            <Button
+              variant="secondary"
             >
-              {" "}
               Hire Me
-              {" "}
-            </button>
+            </Button>
+            {" "}
             <a href="2023.11_Leon_IT_CS.docx" download="LeonResume.docx">
-              <button className="btn highlighted-btn"> Get Resume </button>
+              <Button
+                variant="primary"
+              >
+                Get Resume
+              </Button>
             </a>
           </div>
         </div>
@@ -61,4 +65,22 @@ export default function Profile() {
       </div>
     </div >
   );
+}
+
+const ButtonStyle = {
+  "color": "white",
+  "backgroundColor": "var( --dark-orange)",
+  //#FF5823
+  // "backgroundColor": "dark-orange",
+  "border-color": "blue",
+}
+
+const Highlightedbtn = {
+  "margin": "0 0 0 28px",
+}
+
+const HighlightedHover = {
+  "margin": "0 0 0 28px",
+  "background-color": "cornsilk",
+  "color": "#111",
 }
