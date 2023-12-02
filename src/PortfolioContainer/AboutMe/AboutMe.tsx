@@ -20,13 +20,14 @@ export default function AboutMe(props: ScreenProps) {
   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: "Here's a description to describe something",
+    description: "Recent computer science grad with 10 years of teaching experience, eager to apply pedagogical insights to real-world problem-solving. Excited to transition to a hands-on role, contributing innovative solutions and fostering a collaborative team environment.",
     highlights: {
       bullets: [
-        "first bullet point",
-        "second bullet point",
-        "third bullet point",
-        "fourth bullet point",
+        "Effective Communication: Honed through a decade of teaching, translating complex concepts into accessible content.",
+        "Adaptability: Proven ability to quickly grasp and integrate new technologies, crucial in the ever-evolving field of computer science.",
+        "Collaborative Skills: Facilitated teamwork and communication among students, directly applicable to collaborative coding projects.",
+        "Problem-Solving Acumen: Developed through addressing diverse challenges in education, providing a strong foundation for tackling complex issues in computer science.",
+        "Empathy and Patience: Cultivated essential qualities for effective mentorship and teamwork, vital in computer science projects."
       ],
       heading: "Here's the title of the highlight list:",
     },
