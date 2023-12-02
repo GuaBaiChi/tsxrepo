@@ -18,13 +18,13 @@ export const TOTAL_SCREENS = new Array<Screen>(
     component: Home,
     alreadyRendered: false,
     props: {
-      screen_name: "About Me"
+      screen_name: "Home"
     }
   }, {
   component: AboutMe,
   alreadyRendered: false,
   props: {
-    screen_name: "About Me"
+    screen_name: "About_Me"
   }
 },
   {

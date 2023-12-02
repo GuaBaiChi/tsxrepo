@@ -7,13 +7,16 @@ export default function Profile() {
     <div className="profile-container">
       <div className="profile-parent">
         <div className="profile-details">
+          <div className="profile-details-name">
+            <span className="primary-text">
+              <em> Hello, I am </em>
+              <span className="highlighted-text">Leon</span>
+            </span>
+          </div>
           <div className="colz">
             <div className="colz-icon">
               <a href="mailto:leon.antonio.rodriguez.sanpere@gmail.com">
                 <i className="fa fa-envelope"> </i>
-              </a>
-              <a href="https://github.com/GuaBaiChi">
-                <i className="fa fa-github-square"> </i>
               </a>
               <a href="https://www.linkedin.com/in/leon-r-60a370214/">
                 <i className="fa fa-linkedin-square"> </i>
@@ -24,14 +27,12 @@ export default function Profile() {
               <a href="https://api.whatsapp.com/send/?phone=%2B1800000000&text=Hello+Leon">
                 <i className="fa fa-whatsapp"> </i>
               </a> */}
+              <a href="https://github.com/GuaBaiChi">
+                <i className="fa fa-github-square"> </i>
+              </a>
             </div>
           </div>
-          <div className="profile-details-name">
-            <span className="primary-text">
-              <em> Hello, I am </em>
-              <span className="highlighted-text">Leon</span>
-            </span>
-          </div>
+
           <div className="profile-details-role">
             <span className="primary-text">
               {" "}
@@ -46,6 +47,7 @@ export default function Profile() {
           <div>
             <Button
               variant="secondary"
+            // onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             >
               Hire Me
             </Button>

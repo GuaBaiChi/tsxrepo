@@ -5,6 +5,7 @@ import Animations from "../../Utilities/Animations";
 import "./AboutMe.css";
 import { ScreenFadeInSubject } from "../../Utilities/ScrollService";
 import { ScreenProps } from "../../Utilities/CommonUtils";
+import Button from 'react-bootstrap/Button';
 
 export type AboutMeProps = {
   id: string,
@@ -42,7 +43,7 @@ export default function AboutMe(props: ScreenProps) {
   let screenHeadingProps = {
     "id": 1,
     "title": "About Me",
-    "subHeading": "Why Choose Me?"
+    "subHeading": "Here are some details"
   }
 
   return (
@@ -64,16 +65,21 @@ export default function AboutMe(props: ScreenProps) {
               </div>
               {renderHighlight()}
             </div>
-            <div className="about-me-options">
-              <button
-                className="btn primary-btn"
+            <div>
+              {/* <div className="about-me-options"> */}
+              <Button
+                variant="secondary"
                 onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
               >
-                {" "}
-                Hire Me{" "}
-              </button>
+                Hire Me
+              </Button>
+              {" "}
               <a href="2023.11_Leon_IT_CS.docx" download="LeonResume.docx">
-                <button className="btn highlighted-btn"> Get Resume </button>
+                <Button
+                  variant="primary"
+                >
+                  Get Resume
+                </Button>
               </a>
             </div>
           </div>
