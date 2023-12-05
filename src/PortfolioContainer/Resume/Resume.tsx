@@ -99,7 +99,7 @@ const Resume = (props: ScreenProps) => {
             ))
           }
         </div>
-        < div className="resume-screen-container" key="experience" >
+        < div className="programming-skills-container" key="skills" >
           {
             programmingSkillsDetails.map((skill, index) => (
               <div className="skill-parent" key={index}>
@@ -113,6 +113,7 @@ const Resume = (props: ScreenProps) => {
                 </div>
               </div>
             ))
+
           }
         </div >
         <div className="resume-screen-container" key="projects">
