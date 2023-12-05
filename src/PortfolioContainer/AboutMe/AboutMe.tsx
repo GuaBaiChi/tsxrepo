@@ -29,7 +29,7 @@ export default function AboutMe(props: ScreenProps) {
         "Problem-Solving Acumen: Developed through addressing diverse challenges in education, providing a strong foundation for tackling complex issues in computer science.",
         "Empathy and Patience: Cultivated essential qualities for effective mentorship and teamwork, vital in computer science projects."
       ],
-      heading: "Here's the title of the highlight list:",
+      heading: "Highlight list:",
     },
   };
   const renderHighlight = () => {

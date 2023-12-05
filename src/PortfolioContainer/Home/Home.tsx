@@ -16,14 +16,16 @@ export default function Home(props: ScreenProps) {
   }
 
   return (
-    <div className="home-container"
-    // id={id}
-    >
-      <ScreenHeading props={screenHeadingProps} />
-      <HeaderTest />
-      <Header />
-      <Profile />
-      <Footer />
+    <div className="home-container screen-container fade-in" id={props.screen_name || ""}>
+      <div className="home-container"
+      // id={id}
+      >
+        <ScreenHeading props={screenHeadingProps} />
+        <HeaderTest />
+        <Header />
+        <Profile />
+        <Footer />
+      </div>
     </div>
   );
 }
