@@ -91,8 +91,8 @@ const Resume = (props: ScreenProps) => {
               <ResumeHeading
                 key={index}
                 heading={workExperience.title}
-                description={workExperience.description}
                 subHeading={workExperience.subHeading}
+                description={workExperience.description}
                 fromDate={workExperience.duration.fromDate}
                 toDate={workExperience.duration.toDate}
               />

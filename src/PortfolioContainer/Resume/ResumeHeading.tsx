@@ -23,17 +23,20 @@ export const ResumeHeading = (props: ResumeProps) => {
           <div></div>
         )}
       </div>
+
       <div className="resume-sub-heading">
+        <span>{props.subHeading ? props.subHeading : ""}</span>
         <span>{props.link && props.link.map((href) => (
           <a href={href} target="_blank" rel="noreferrer">{href}</a>
         ))}</span>
       </div>
+
       <div className="resume-heading-description">
         <span>{props.description ? props.description : ""}</span>
       </div>
-      <div className="resume-heading-description">
+      {/* <div className="resume-heading-description">
         <span>{props.used ? props.used : ""}</span>
-      </div>
+      </div> */}
     </div>
   );
 }
