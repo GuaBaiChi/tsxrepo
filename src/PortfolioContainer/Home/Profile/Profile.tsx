@@ -45,12 +45,12 @@ export default function Profile() {
             </span>
           </div>
           <div>
-            <Button
+            {/* <Button
               variant="secondary"
             // onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             >
               Hire Me
-            </Button>
+            </Button> */}
             {" "}
             <a href="2023.11_Leon_IT_CS.docx" download="LeonResume.docx">
               <Button
