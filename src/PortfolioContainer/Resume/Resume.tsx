@@ -157,7 +157,7 @@ const Resume = (props: ScreenProps) => {
   let screenHeadingProps = {
     "id": 2,
     "title": "Resume",
-    "subHeading": "My details"
+    "subHeading": "My information"
   }
 
   return (
