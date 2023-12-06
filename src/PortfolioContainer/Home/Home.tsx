@@ -20,8 +20,8 @@ export default function Home(props: ScreenProps) {
       <div className="home-container"
       // id={id}
       >
-        <ScreenHeading props={screenHeadingProps} />
         <HeaderTest />
+        <ScreenHeading props={screenHeadingProps} />
         <Header />
         <Profile />
         <Footer />
