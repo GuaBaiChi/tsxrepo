@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tsxrepo/static/css/main.f4cfcaba.css",
-    "main.js": "/tsxrepo/static/js/main.332ab983.js",
+    "main.js": "/tsxrepo/static/js/main.63393c3c.js",
     "static/media/me.jpg": "/tsxrepo/static/media/me.737a6a1a63215c0d6845.jpg",
     "static/media/profilephoto.jpg": "/tsxrepo/static/media/profilephoto.737a6a1a63215c0d6845.jpg",
     "static/media/bg.jpg": "/tsxrepo/static/media/bg.461effa55cbb5a0edfdb.jpg",
@@ -12,10 +12,10 @@
     "static/media/education.svg": "/tsxrepo/static/media/education.9ed8b53812c3beb648e1.svg",
     "static/media/work-history.svg": "/tsxrepo/static/media/work-history.f8127a79c81e4defe8bc.svg",
     "main.f4cfcaba.css.map": "/tsxrepo/static/css/main.f4cfcaba.css.map",
-    "main.332ab983.js.map": "/tsxrepo/static/js/main.332ab983.js.map"
+    "main.63393c3c.js.map": "/tsxrepo/static/js/main.63393c3c.js.map"
   },
   "entrypoints": [
     "static/css/main.f4cfcaba.css",
-    "static/js/main.332ab983.js"
+    "static/js/main.63393c3c.js"
   ]
 }
