@@ -3,37 +3,37 @@ import AboutMe from "../PortfolioContainer/AboutMe/AboutMe";
 import Resume from "../PortfolioContainer/Resume/Resume";
 
 export type ScreenProps = {
-  screen_name: string
-}
+  screen_name: string;
+};
 
 export type Screen = {
-  component: (props: ScreenProps) => JSX.Element,
-  alreadyRendered: boolean
-  props: ScreenProps
-}
-
+  component: (props: ScreenProps) => JSX.Element;
+  alreadyRendered: boolean;
+  props: ScreenProps;
+};
 
 export const TOTAL_SCREENS = new Array<Screen>(
   {
     component: Home,
     alreadyRendered: false,
     props: {
-      screen_name: "Home"
-    }
-  }, {
-  component: AboutMe,
-  alreadyRendered: false,
-  props: {
-    screen_name: "About_Me"
-  }
-},
+      screen_name: "Home",
+    },
+  },
+  {
+    component: AboutMe,
+    alreadyRendered: false,
+    props: {
+      screen_name: "About_Me",
+    },
+  },
   {
     component: Resume,
     alreadyRendered: false,
     props: {
-      screen_name: "Resume"
-    }
-  }
+      screen_name: "Resume",
+    },
+  },
 );
 
 export const GET_SCREEN_INDEX = (screen_name: string) => {

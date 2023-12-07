@@ -38,18 +38,20 @@
   margin: 0 0 5px 0;
 }
 .highlight {
-  display: flex;
+  display: -webkit-inline-box;
   align-items: center;
   margin: 5px 0;
   font-size: 12px;
 }
 .highlight-blob {
-  height: 12px;
-  width: 12px;
-  margin: 0 10px 0 0;
+  height: 15px;
+  width: 15px;
+  margin: 5px 10px 0 0;
   background-color: #ff5823;
   border-radius: 50%;
 }
+
+
 /* .about-me-options .highlighted-btn {
   margin: 0 0 0 30px;
 } */
