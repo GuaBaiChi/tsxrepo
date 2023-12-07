@@ -6,14 +6,17 @@ import Tab from "react-bootstrap/Tab";
 import "./Resume.css";
 
 import { educationDetails } from "../../Data/EducationDetails";
-import { workExperience } from "../../Data/WorkExperience";
+import { Experience } from "../../Data/Experience";
 import { programmingSkillsDetails } from "../../Data/ProgrammingSkillsDetails";
+import { SoftSkillsDetails } from "../../Data/SoftSkillsDetails";
 import { projectsDetails } from "../../Data/ProjectsDetails";
 import { interests } from "../../Data/Interests";
 import { ScreenProps } from "../../Utilities/CommonUtils";
 import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 
 const Resume = (props: ScreenProps) => {
+
+  // Education
   const getEducationDetails = () => {
     return (
       <div>
@@ -29,10 +32,11 @@ const Resume = (props: ScreenProps) => {
             </div>
             <div className="resume-sub-heading">
               <span>{details.subHeading}</span>
-              <span></span>
             </div>
             <div className="resume-heading-description">
-              <span></span>
+            </div>
+            <div className="resume-sub-heading">
+              <span>{details.links}</span>
             </div>
           </div>
         ))}
@@ -40,10 +44,11 @@ const Resume = (props: ScreenProps) => {
     );
   };
 
-  const getWorkDetails = () => {
+  // Experience
+  const getExperienceDetails = () => {
     return (
       <div>
-        {workExperience.map((experience) => (
+        {Experience.map((experience) => (
           <div className="resume-heading">
             <div className="resume-main-heading">
               <div className="heading-bullet"></div>
@@ -52,13 +57,101 @@ const Resume = (props: ScreenProps) => {
             </div>
             <div className="resume-sub-heading">
               <span>Teacher</span>
-              <span></span>
             </div>
             <div className="resume-heading-description">
               <span>
                 Subjects: English, political science, social science, AP
                 literature, AP world history, TEFL/TOEFL
               </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const getProgrammingSkillsDetails = () => {
+    return (
+      < div className="programming-skills-container" key="skills" >
+        {
+          programmingSkillsDetails.map((skill, index) => (
+            <div className="skill-parent" key={index}>
+              <div className="heading-bullet"></div>
+              <span>{skill.skill}</span>
+              <div className="skill-percentage">
+                <div
+                  style={{ width: skill.ratingPercentage + "%" }}
+                  className="active-percentage-bar"
+                ></div>
+              </div>
+            </div>
+          ))
+
+        }
+      </div >
+    );
+  };
+
+  const getSoftSkillsDetails = () => {
+    return (
+      <div>
+        {SoftSkillsDetails.map((details) => (
+          <div className="resume-heading">
+            <div className="resume-main-heading">
+              <div className="heading-bullet"></div>
+              <span>{details.title}</span>
+            </div>
+            <div className="resume-sub-heading">
+              <span>{details.subHeading}</span>
+            </div>
+            <div className="resume-heading-description">
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const getProjectsDetails = () => {
+    return (
+      <div>
+        {projectsDetails.map((details) => (
+          <div className="resume-heading">
+            <div className="resume-main-heading">
+              <div className="heading-bullet"></div>
+              <span>{details.title}</span>
+
+              <div className="heading-date">
+                {details.duration.fromDate.getFullYear()} -{" "}
+                {details.duration.toDate.getFullYear()}
+              </div>
+            </div>
+            <div className="resume-heading-description">
+              <span>{details.link}</span>
+            </div>
+            <div className="resume-sub-heading">
+              <span>{details.subHeading}</span>
+            </div>
+            <div className="resume-heading-description">
+              <span>{details.description}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const getInterestsDetails = () => {
+    return (
+      <div>
+        {interests.map((details) => (
+          <div className="resume-heading">
+            <div className="resume-main-heading">
+              <div className="heading-bullet"></div>
+              <span>{details.title}</span>
+            </div>
+            <div className="resume-sub-heading">
+              <span>{details.description}</span>
             </div>
           </div>
         ))}
@@ -76,18 +169,30 @@ const Resume = (props: ScreenProps) => {
                 <Nav.Link eventKey="first">Education</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second">Work History</Nav.Link>
+                <Nav.Link eventKey="second">Experience</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="third">Projects</Nav.Link>
+                <Nav.Link eventKey="third">Programming Skills</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="fourth">Soft Skills</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="fifth">Projects</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="sixth">Interests</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
           <Col sm={9}>
             <Tab.Content>
               <Tab.Pane eventKey="first">{getEducationDetails()}</Tab.Pane>
-              <Tab.Pane eventKey="second">{getWorkDetails()}</Tab.Pane>
-              <Tab.Pane eventKey="third">{ }</Tab.Pane>
+              <Tab.Pane eventKey="second">{getExperienceDetails()}</Tab.Pane>
+              <Tab.Pane eventKey="third">{getProgrammingSkillsDetails()}</Tab.Pane>
+              <Tab.Pane eventKey="fourth">{getSoftSkillsDetails()}</Tab.Pane>
+              <Tab.Pane eventKey="fifth">{getProjectsDetails()}</Tab.Pane>
+              <Tab.Pane eventKey="sixth">{getInterestsDetails()}</Tab.Pane>
             </Tab.Content>
           </Col>
         </Row>

@@ -28,21 +28,19 @@ function HeaderNavbar() {
 
 
   return (
-    <div>
-      <Navbar expand="lg" bg="dark" variant="dark" fixed="top" expanded={!collapsed}>
-        <Container>
-          <Navbar.Brand href="/">Leon's Portfolio</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggle} />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#Home">Home</Nav.Link>
-              <Nav.Link href="#About_Me">About Me</Nav.Link>
-              <Nav.Link href="#Resume">Resume</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    <Navbar expand="lg" bg="dark" variant="dark" fixed="top" expanded={!collapsed}>
+      <Container>
+        <Navbar.Brand href="/">Leon's Portfolio</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggle} />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#Home">Home</Nav.Link>
+            <Nav.Link href="#About_Me">About Me</Nav.Link>
+            <Nav.Link href="#Resume">Resume</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

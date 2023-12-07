@@ -1,4 +1,4 @@
-export const workExperience = [
+export const Experience = [
   {
     title: "Teacher for 10 years in China",
     duration: { fromDate: new Date("2011"), toDate: new Date("2021") },
