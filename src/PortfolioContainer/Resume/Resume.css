@@ -102,6 +102,7 @@
 .resume-heading {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .resume-main-heading {

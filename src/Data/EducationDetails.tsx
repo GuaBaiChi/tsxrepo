@@ -26,7 +26,7 @@ export const educationDetails = new Array<EducationDetail>(
   },
   {
     title: "University of Helsinki",
-    subHeading: "Java Programming 1",
+    subHeading: "Java Programming 1, Python Programming 1",
     duration: { fromDate: new Date("2021"), toDate: new Date("2023") },
     urls: ["https://java-programming.mooc.fi/", "https://programming-23.mooc.fi/"],
   },
