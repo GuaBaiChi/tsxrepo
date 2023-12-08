@@ -44,7 +44,7 @@ export default function Header() {
           <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />s
         </div> */}
         <div className="header-logo">
-          <span>Welcome to my WIP</span>
+          <span>Welcome to my Portfolio Website</span>
         </div>
         {/* <div
           className={
