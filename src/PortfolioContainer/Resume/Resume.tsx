@@ -36,7 +36,13 @@ const Resume = (props: ScreenProps) => {
             <div className="resume-heading-description">
             </div>
             <div className="resume-sub-heading">
-              <span>{details.links}</span>
+              <ul>
+                {details.urls && details.urls.map((url, urlIndex) => (
+                  <li key={urlIndex}>
+                    <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
@@ -126,9 +132,13 @@ const Resume = (props: ScreenProps) => {
                 {details.duration.toDate.getFullYear()}
               </div>
             </div>
-            <div className="resume-heading-description">
-              <span>{details.link}</span>
-            </div>
+            <ul>
+              {details.urls && details.urls.map((url, urlIndex) => (
+                <li key={urlIndex}>
+                  <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
+                </li>
+              ))}
+            </ul>
             <div className="resume-sub-heading">
               <span>{details.subHeading}</span>
             </div>
