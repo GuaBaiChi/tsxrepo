@@ -3,7 +3,9 @@ export const Experience = [
     title: "Teacher for 10 years in China",
     duration: { fromDate: new Date("2011"), toDate: new Date("2021") },
     subHeading: "Teacher",
-    description: "Subjects: English, political science, social science, AP literature, AP world history, TEFL/TOEFL",
-    used: "- Cross-cultural and cross-generational communication skills. Able to manage and set expectations and goals for shareholders."
+    description1: "Subjects: English, political science, social science, AP literature, AP world history, TEFL/TOEFL",
+    description2: "- Cross-cultural and cross-generational communication skills. Able to manage and set expectations and goals for shareholders.",
+    description3: "- 4 impactful years teaching high school students at an international department in Chengdu, China. During this time, my primary focus was on the Canadian Pathway Program, a collaborative initiative between our institution and local teachers in Kamloops, Canada. This program not only allowed me to nurture a global perspective among my students but also provided them with a unique opportunity to immerse themselves in a multicultural learning environment. My responsibilities in this role encompassed designing curriculum that met international standards, fostering cross-cultural understanding, and facilitating effective communication between students from different corners of the world.",
+    description4: "- 6 years at various schools, where I had the opportunity to teach a range of subjects and age groups. These years added depth to my pedagogical expertise and expanded my horizons as an educator. I had the privilege of instructing students in Advanced Placement (AP) courses such as Human Geography, US History, and World History, all of which demanded a high level of critical thinking and analytical skills. These rigorous programs allowed me to challenge my students and guide them towards academic excellence. I also took on the responsibility of teaching English to students preparing for the International General Certificate of Secondary Education (IGCSE) and the International English Language Testing System (IELTS). These experiences reinforced my belief in the importance of strong language skills as a tool for success, both academically and in a global context.",
   }
 ]

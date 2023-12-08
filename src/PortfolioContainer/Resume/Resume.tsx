@@ -54,21 +54,30 @@ const Resume = (props: ScreenProps) => {
   const getExperienceDetails = () => {
     return (
       <div>
-        {Experience.map((experience) => (
+        {Experience.map((details) => (
           <div className="resume-heading">
             <div className="resume-main-heading">
               <div className="heading-bullet"></div>
-              <span>Teacher for 10 years in China</span>
-              <div className="heading-date">2011 - 2021</div>
+              <span>{details.title}</span>
+              <div className="heading-date">
+                {details.duration.fromDate.getFullYear()} -{" "}
+                {details.duration.toDate.getFullYear()}
+              </div>
             </div>
             <div className="resume-sub-heading">
-              <span>Teacher</span>
+              <span>{details.subHeading}</span>
             </div>
             <div className="resume-heading-description">
-              <span>
-                Subjects: English, political science, social science, AP
-                literature, AP world history, TEFL/TOEFL
-              </span>
+              <span>{details.description1}</span>
+            </div>
+            <div className="resume-heading-description">
+              <span>{details.description2}</span>
+            </div>
+            <div className="resume-heading-description">
+              <span>{details.description3}</span>
+            </div>
+            <div className="resume-heading-description">
+              <span>{details.description3}</span>
             </div>
           </div>
         ))}
