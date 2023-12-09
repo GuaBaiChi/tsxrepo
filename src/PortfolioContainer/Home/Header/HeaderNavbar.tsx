@@ -1,8 +1,9 @@
 
-import { useState, useContext } from "react";
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import "./Header.css";
 
 function HeaderNavbar() {
   const [collapsed, setCollapsed] = useState(true);

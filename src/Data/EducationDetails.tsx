@@ -38,7 +38,7 @@ export const educationDetails = new Array<EducationDetail>(
   },
   {
     title: "Certificates",
-    subHeading: "CELTA, Google IT Support Professional, Google Data Analytics, Google UX Design",
+    subHeading: "CELTA, Google IT Support Professional, Google Data Analytics, Google UX Design, Credly badges for proof",
     duration: { fromDate: new Date("2019"), toDate: new Date("2022") },
     urls: ["https://www.cambridgeenglish.org/teaching-english/teaching-qualifications/celta/", "https://www.coursera.org/professional-certificates/google-data-analytics", "https://www.coursera.org/professional-certificates/google-ux-design", "https://www.coursera.org/professional-certificates/google-it-support", "https://www.credly.com/users/leon-rodriguez/badges"],
   }

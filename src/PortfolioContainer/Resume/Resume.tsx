@@ -240,7 +240,7 @@ const Resume = (props: ScreenProps) => {
 
 const ResumeScreenStyle = {
   maxWidth: "1000px",
-  width: "800px",
+  // width: "800px",
   height: "1000px",
 };
 

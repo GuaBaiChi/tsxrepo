@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   TOTAL_SCREENS,
   GET_SCREEN_INDEX,
@@ -34,27 +34,11 @@ export default function Header() {
   return (
     <div
       className="header-container"
-      onClick={() => setShowHeaderOptions(!showHeaderOptions)}
-    >
+      onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
       <div className="header-parent">
-        {/* <div
-          className="header-hamburger"
-          onClick={() => setShowHeaderOptions(!showHeaderOptions)}
-        >
-          <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />s
-        </div> */}
         <div className="header-logo">
           <span>Welcome to my Portfolio Website</span>
         </div>
-        {/* <div
-          className={
-            showHeaderOptions
-              ? "header-options show-hamburger-options"
-              : "header-options"
-          }
-        >
-          {getHeaderOptions()}
-        </div> */}
       </div>
     </div>
   );
