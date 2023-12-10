@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tsxrepo/static/css/main.762c8753.css",
-    "main.js": "/tsxrepo/static/js/main.99964db2.js",
+    "main.css": "/tsxrepo/static/css/main.65629809.css",
+    "main.js": "/tsxrepo/static/js/main.c221fa1b.js",
     "static/media/Leon.jpg": "/tsxrepo/static/media/Leon.6ec6e8ca28da7b39b823.jpg",
     "static/media/bg.jpg": "/tsxrepo/static/media/bg.461effa55cbb5a0edfdb.jpg",
     "index.html": "/tsxrepo/index.html",
-    "main.762c8753.css.map": "/tsxrepo/static/css/main.762c8753.css.map",
-    "main.99964db2.js.map": "/tsxrepo/static/js/main.99964db2.js.map"
+    "main.65629809.css.map": "/tsxrepo/static/css/main.65629809.css.map",
+    "main.c221fa1b.js.map": "/tsxrepo/static/js/main.c221fa1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.762c8753.css",
-    "static/js/main.99964db2.js"
+    "static/css/main.65629809.css",
+    "static/js/main.c221fa1b.js"
   ]
 }
