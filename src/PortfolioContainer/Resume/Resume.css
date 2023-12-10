@@ -159,11 +159,14 @@
 }
 
 .programming-skills-container {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  color: var(--dark-orange);
+  font-size: 16px;
+  font-family: "Poppins SemiBold";
 }
 
 .skill-percentage {
@@ -242,4 +245,23 @@
 
 .resume-pill-container {
   padding-right: 10px;
+}
+
+.resume-tabs {
+  max-width: 1000px;
+  height: 1000px;
+  width: 800px;
+}
+
+@media only screen and (max-width: 800px) {
+  .resume-tabs {
+    max-width: 1000px;
+    height: 1000px;
+    width: 100vw;
+    padding: 15px;
+  }
+}
+
+.resume-heading ul li a {
+  word-wrap: break-word;
 }

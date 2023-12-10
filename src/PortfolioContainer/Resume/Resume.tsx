@@ -13,6 +13,7 @@ import { projectsDetails } from "../../Data/ProjectsDetails";
 import { interests } from "../../Data/Interests";
 import { ScreenProps } from "../../Utilities/CommonUtils";
 import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
+import { ProgressBar } from "react-bootstrap";
 
 const Resume = (props: ScreenProps) => {
 
@@ -23,7 +24,7 @@ const Resume = (props: ScreenProps) => {
         {educationDetails.map((details) => (
           <div className="resume-heading">
             <div className="resume-main-heading">
-              <div className="heading-bullet"></div>
+              {/* <div className="heading-bullet"></div> */}
               <span>{details.title}</span>
               <div className="heading-date">
                 {details.duration.fromDate.getFullYear()} -{" "}
@@ -57,7 +58,7 @@ const Resume = (props: ScreenProps) => {
         {Experience.map((details) => (
           <div className="resume-heading">
             <div className="resume-main-heading">
-              <div className="heading-bullet"></div>
+              {/* <div className="heading-bullet"></div> */}
               <span>{details.title}</span>
               <div className="heading-date">
                 {details.duration.fromDate.getFullYear()} -{" "}
@@ -90,30 +91,34 @@ const Resume = (props: ScreenProps) => {
       < div className="programming-skills-container" key="skills" >
         {
           programmingSkillsDetails.map((skill, index) => (
-            <div className="skill-parent" key={index}>
-              <div className="heading-bullet"></div>
+            <div style={{ "padding": "10px" }}>
               <span>{skill.skill}</span>
-              <div className="skill-percentage">
-                <div
-                  style={{ width: skill.ratingPercentage + "%" }}
-                  className="active-percentage-bar"
-                ></div>
-              </div>
+              <ProgressBar now={skill.ratingPercentage} />
             </div>
+
+            // <div className="skill-parent" key={index}>
+            //   {/* <div className="heading-bullet"></div> */}
+            //   <span>{skill.skill}</span>
+            //   <div className="skill-percentage">
+            //     <div
+            //       style={{ width: skill.ratingPercentage + "%" }}
+            //       className="active-percentage-bar"
+            //     ></div>
+            //   </div>
+            // </div>
           ))
 
         }
       </div >
     );
   };
-
   const getSoftSkillsDetails = () => {
     return (
       <div>
         {SoftSkillsDetails.map((details) => (
           <div className="resume-heading">
             <div className="resume-main-heading">
-              <div className="heading-bullet"></div>
+              {/* <div className="heading-bullet"></div> */}
               <span>{details.title}</span>
             </div>
             <div className="resume-sub-heading">
@@ -133,7 +138,7 @@ const Resume = (props: ScreenProps) => {
         {projectsDetails.map((details) => (
           <div className="resume-heading">
             <div className="resume-main-heading">
-              <div className="heading-bullet"></div>
+              {/* <div className="heading-bullet"></div> */}
               <span>{details.title}</span>
 
               <div className="heading-date">
@@ -166,7 +171,7 @@ const Resume = (props: ScreenProps) => {
         {interests.map((details) => (
           <div className="resume-heading">
             <div className="resume-main-heading">
-              <div className="heading-bullet"></div>
+              {/* <div className="heading-bullet"></div> */}
               <span>{details.title}</span>
             </div>
             <div className="resume-sub-heading">
@@ -232,16 +237,10 @@ const Resume = (props: ScreenProps) => {
     >
       <div className="resume-content">
         <ScreenHeading props={screenHeadingProps} />
-        <div style={ResumeScreenStyle}>{getResumeTabs()}</div>
+        <div className="resume-tabs">{getResumeTabs()}</div>
       </div>
     </div>
   );
-};
-
-const ResumeScreenStyle = {
-  maxWidth: "1000px",
-  // width: "800px",
-  height: "1000px",
 };
 
 export default Resume;
