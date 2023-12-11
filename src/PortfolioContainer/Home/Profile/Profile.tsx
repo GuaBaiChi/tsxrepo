@@ -40,7 +40,7 @@ export default function Profile() {
                 {" "}
               </h1>
               <span className="profile-role-tagline">
-                Aspiring programmer in: Java, Python, Typescript, and ReactJS
+                Programmer in: Java, Python, Typescript, and ReactJS
               </span>
             </span>
           </div>
