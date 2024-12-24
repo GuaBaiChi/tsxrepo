@@ -78,7 +78,7 @@ const Resume = (props: ScreenProps) => {
               <span>{details.description3}</span>
             </div>
             <div className="resume-heading-description">
-              <span>{details.description3}</span>
+              <span>{details.description4}</span>
             </div>
           </div>
         ))}
