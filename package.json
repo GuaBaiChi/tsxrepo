@@ -1,5 +1,5 @@
 {
-  "homepage": "http://GuaBaiChi.github.io/tsxrepo",
+  "homepage": "https://tsxrepo.azurewebsites.net/",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -14,12 +14,14 @@
     "@types/node": "^16.18.25",
     "@types/react-dom": "^18.2.1",
     "axios": "^1.4.0",
+    "n": "^9.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
     "react-scripts": "5.0.1",
     "rxjs": "^7.8.1",
+    "stable": "^0.1.8",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },

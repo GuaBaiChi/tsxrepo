@@ -75,7 +75,7 @@ export default function AboutMe(props: ScreenProps) {
                 Hire Me
               </Button> */}
               {" "}
-              <a href="2023.11_Leon_IT_CS.docx" download="LeonResume.docx">
+              <a href="LeonCV.pdf" download="LeonCV.pdf">
                 <Button
                   variant="primary"
                 >
