@@ -20,13 +20,13 @@ export default function AboutMe(props: ScreenProps) {
   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: "Recent computer science graduate with 10 years of teaching experience, eager to apply pedagogical insights to real-world problem-solving. Excited to transition to a hands-on role, contributing innovative solutions and fostering a collaborative team environment.",
+    description: "Recent computer science graduate with 10 years of teaching experience, eager to bring a strong background in education and communication to solving practical challenges. Excited to transition into a dynamic, hands-on role where I can contribute creative solutions and thrive in a collaborative team setting.",
     highlights: {
       bullets: [
         "Effective Communication: Honed through a decade of teaching, translating complex concepts into accessible content.",
         "Adaptability: Proven ability to quickly grasp and integrate new technologies, crucial in the ever-evolving field of computer science.",
         "Collaborative Skills: Facilitated teamwork and communication among students, directly applicable to collaborative coding projects.",
-        "Problem-Solving Acumen: Developed through addressing diverse challenges in education, providing a strong foundation for tackling complex issues in computer science.",
+        "Problem-Solving: Developed through addressing diverse challenges in education, providing a strong foundation for tackling complex issues in computer science.",
         "Empathy and Patience: Cultivated essential qualities for effective mentorship and teamwork, vital in computer science projects."
       ],
       heading: "Highlight list:",
