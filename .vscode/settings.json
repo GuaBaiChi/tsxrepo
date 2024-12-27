@@ -2,5 +2,10 @@
   "appService.zipIgnorePattern": [
     "node_modules{,/**}",
     ".vscode{,/**}"
-  ]
+  ],
+  "files.exclude": {
+    "**/.git": false
+  },
+  "search.useGlobalIgnoreFiles": false,
+  "search.useIgnoreFiles": false
 }
