@@ -1,0 +1,17 @@
+name: Test Workflow
+
+on: 
+  push:
+    branches:
+      - azure  # Trigger on push to the azure branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Print Hello World
+        run: echo "Hello, GitHub Actions!"
