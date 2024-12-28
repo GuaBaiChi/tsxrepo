@@ -20,6 +20,11 @@ jobs:
         with:
           submodules: true
           lfs: false
+          
+      - name: Install dependencies
+        run: |
+          npm install  # Install dependencies
+
       - name: Build the app
         run: |
           CI=false npm run build  # Disable CI to prevent treating warnings as errors
