@@ -5,8 +5,8 @@ import Tab from "react-bootstrap/Tab";
 
 import "./Resume.css";
 
-import { educationDetails } from "../../Data/EducationDetails";
 import { Experience } from "../../Data/Experience";
+import { educationDetails } from "../../Data/EducationDetails";
 import { programmingSkillsDetails } from "../../Data/ProgrammingSkillsDetails";
 import { SoftSkillsDetails } from "../../Data/SoftSkillsDetails";
 import { projectsDetails } from "../../Data/ProjectsDetails";
@@ -16,40 +16,6 @@ import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import { ProgressBar } from "react-bootstrap";
 
 const Resume = (props: ScreenProps) => {
-
-  // Education
-  const getEducationDetails = () => {
-    return (
-      <div>
-        {educationDetails.map((details) => (
-          <div className="resume-heading">
-            <div className="resume-main-heading">
-              {/* <div className="heading-bullet"></div> */}
-              <span>{details.title}</span>
-              <div className="heading-date">
-                {details.duration.fromDate.getFullYear()} -{" "}
-                {details.duration.toDate.getFullYear()}
-              </div>
-            </div>
-            <div className="resume-sub-heading">
-              <span>{details.subHeading}</span>
-            </div>
-            <div className="resume-heading-description">
-            </div>
-            <div className="resume-sub-heading">
-              <ul>
-                {details.urls && details.urls.map((url, urlIndex) => (
-                  <li key={urlIndex}>
-                    <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  };
 
   // Experience
   const getExperienceDetails = () => {
@@ -79,6 +45,40 @@ const Resume = (props: ScreenProps) => {
             </div>
             <div className="resume-heading-description">
               <span>{details.description4}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  // Education
+  const getEducationDetails = () => {
+    return (
+      <div>
+        {educationDetails.map((details) => (
+          <div className="resume-heading">
+            <div className="resume-main-heading">
+              {/* <div className="heading-bullet"></div> */}
+              <span>{details.title}</span>
+              <div className="heading-date">
+                {details.duration.fromDate.getFullYear()} -{" "}
+                {details.duration.toDate.getFullYear()}
+              </div>
+            </div>
+            <div className="resume-sub-heading">
+              <span>{details.subHeading}</span>
+            </div>
+            <div className="resume-heading-description">
+            </div>
+            <div className="resume-sub-heading">
+              <ul>
+                {details.urls && details.urls.map((url, urlIndex) => (
+                  <li key={urlIndex}>
+                    <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
@@ -190,10 +190,10 @@ const Resume = (props: ScreenProps) => {
           <Col sm={3}>
             <Nav variant="pills" className="flex-column resume-pill-container">
               <Nav.Item>
-                <Nav.Link eventKey="first">Education</Nav.Link>
+                <Nav.Link eventKey="second">Experience</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second">Experience</Nav.Link>
+                <Nav.Link eventKey="first">Education</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="third">Programming Skills</Nav.Link>

@@ -11,10 +11,16 @@ export const projectsDetails = [
   {
     title: "Personal Portfolio Website",
     subHeading: "Leon's Portfolio",
-    description: "A personal portfolio website to show I can follow instructions. Refactored from ReactJS to TypeScript.",
+    description: "A personal portfolio website to show I can follow instructions. Refactored from ReactJS to TypeScript. I have successfully hosted this site on: Heroku(when it was free!), Azure, and Github Pages. Though originally made in the years stated, I still update the website and tweak it as my experience and years continue. Thank you for reading!",
     used: "Used: TypeScript, React JS, Bootstrap, CSS, HTML",
-    urls: ["https://github.com/GuaBaiChi/tsxrepo",],
+    urls: ["https://github.com/GuaBaiChi/tsxrepo", "https://blue-stone-01a8ed00f.4.azurestaticapps.net/"],
     duration: { fromDate: new Date("03/01/2022"), toDate: new Date("08/12/2023") },
+  },
+  {
+    title: "Personal Azure Cloud Developer & Experimenter",
+    subHeading: "Building, deploying, and testing in the cloud",
+    description: "Developing and deploying applications using Azure services, including experimenting with cloud functions and GitHub Actions",
+    duration: { fromDate: new Date("2025"), toDate: new Date("2026") },
   },
   {
     title: "Open Source Discord bot for leetcode questions",
