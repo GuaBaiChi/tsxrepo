@@ -37,7 +37,7 @@ export default function Header() {
       onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
       <div className="header-parent">
         <div className="header-logo">
-          <span>Welcome to my Portfolio Website
+          <span>Welcome to my Portfolio Website.
             This website is no longer maintained since 2025.
           </span>
         </div>
